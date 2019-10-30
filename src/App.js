@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Guitar Chords Generator</h1>
+
+      <button className='generate-button'>Generate Random Chords</button>
+
+      <div className='time-interval-container'>
+        <span>Time Interval: </span>
+        <input
+          className='time-interval'
+          value={30}
+        />
+      </div>
+
+      <div className='chord-display'>
+        <span>A</span>
+        <span>E</span>
+        <span>D</span>
+      </div>
     </div>
   );
 }
