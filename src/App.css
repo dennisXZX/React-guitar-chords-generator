@@ -30,5 +30,13 @@
 
 .chord-display span {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 25px;
+}
+
+.chord-title {
+    font-size: 18px;
+}
+
+.chord-list {
+    margin-bottom: 18px;
 }
